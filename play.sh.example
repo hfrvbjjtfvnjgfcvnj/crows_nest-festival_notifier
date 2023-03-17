@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ALERT="${1}"
+
+rsync -va "${ALERT}" user@host:/host/path/
+rm "${ALERT}"
