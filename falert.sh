@@ -37,14 +37,14 @@ cp "tones/notification_tone.wav" "${tmp}/0.wav"
 cp "${SOUNDFILE}" "${tmp}/1.mp3"
 ./generate.sh "${tmp}/note.txt" "${tmp}/2.wav"
 
-pushd "${tmp}"
-tar -czf alert.tgz *
-popd
-
 AFILE="alert$(date '+%Y-%m-%d_%H-%M-%S').tgz"
 
-cp "${tmp}/alert.tgz" "./${AFILE}"
+pushd "${tmp}"
+tar -czf "${AFILE}" *
+
+"${DIR}/play.sh" "${AFILE}"
+
+popd
 
 rm -rf "${tmp}"
 
-./play.sh "${AFILE}"
