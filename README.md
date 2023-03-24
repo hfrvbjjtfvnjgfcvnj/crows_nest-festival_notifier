@@ -1,9 +1,10 @@
-# crows_nest_plugins
+# crows_nest_plugin_festival
 
-Plug-in notifier implementations for https://github.com/hfrvbjjtfvnjgfcvnj/crows_nest
+Plug-in notifier implementation for https://github.com/hfrvbjjtfvnjgfcvnj/crows_nest
+Utilizing Festival Text-to-Speech https://github.com/festvox/festival
 
 
-# festival_alerts
+# Overview
 Audio notifications utilizing the Festival Text-to-Speech plaform.
 
 Dependencies:
