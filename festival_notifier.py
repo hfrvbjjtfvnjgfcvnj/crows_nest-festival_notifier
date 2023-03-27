@@ -1,7 +1,7 @@
 import os
 
 class NotifierFunctor:
-  def __init__(self):
+  def __init__(self,config):
     pass
   
   def __call__(self,config,title,msg_text,priority,sound,url):
